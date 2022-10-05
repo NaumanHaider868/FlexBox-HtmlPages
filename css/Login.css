@@ -1,0 +1,175 @@
+.login{
+    height: 100vh; background:linear-gradient(to bottom, #54256E, #3D4396);
+}
+/* B style */
+
+.bi{
+    position: relative;
+}
+
+h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 550;
+    padding-top: 71px;
+    font-family: 'Poppins',sans-serif;
+}
+.fa-play{
+    position: absolute;
+    font-size: 10px;
+    margin-top: 28px;
+    margin-left: 12.5px;
+}
+.login-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.login-content{
+    background: #fff;
+    width: 350px;
+    height: 380px;
+    border-radius: 8px;
+    /* justify-content: spacse-between; */
+    display: flex;
+}
+.login-content form{
+    padding-top: 48px;
+    padding-left: 45px;
+}
+.login-content form .form-group input{
+    width: 250px;
+    margin-top: 25px;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #958a8a;
+    padding: 5px 0 5px 0;
+    font-size: 13px;
+    border-radius: 0px;
+}
+
+.login-content form .form-check{
+    display: flex;
+    padding-top: 5px;
+}
+.login-content form .form-check label{
+    line-height: 1.5;
+    font-size: 13px;
+    margin-left: -6px;
+}
+.login-content form .form-check p{
+    padding-left: 50px;
+    font-size: 13px;
+    color: #FF8500;
+}
+
+
+form .btn-login{
+    color: #fff;
+    background: #FF8500;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 35px;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    box-shadow: 0px 2px #ffa74687;
+}
+
+
+form .btn-register{
+    margin-top: 10px;
+    height: 35px;
+    background: none;
+    color: #929292;
+    padding: 0;
+    border: 1px solid #958a8a;
+    width: 100%;
+    border-radius: 23px;
+}
+/* Check Box */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    /* flex-direction: row; */
+    margin-top: 3px;
+    width: 40px;
+    height: 18px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: -15px;
+    right: 12px;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 12px;
+    left: 1.5px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #00A651;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #00A651;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  .icons{
+    display: flex;
+    margin: 22px;
+    color: #ccc;
+  }
+
+  .fa-square-facebook{
+    padding-right: 20px;
+    font-size: 15px;
+  }
+  .fa-twitter{
+    font-size: 15px;
+  }

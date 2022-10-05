@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav h1{
+    color: #54256E;
+    font-size: 45px;
+    font-weight: 500;
+}
+.fa-play{
+    position: absolute;
+    font-size: 10px;
+    margin-top: 30px;
+    color: red;
+    margin-left: 11px;
+}
+.en{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main-side{
+    display: flex;
+}
+.sidebar{
+    height: 100%;
+    width:20%;
+    background:#56226A;
+    flex-direction: column;
+}
+.sidebar .nav{
+    display: flex;
+    flex-direction: column;
+    color:lavender;
+    padding-top: 10px;
+}
+.main-content{
+    width:80%;
+    height: 770px;
+    background:#F0F4FA;
+}
+.content-body{
+    width: 1000px;
+    padding: 12px;
+    height: 612px;
+    border-radius: 13px;
+    margin: 20px auto;
+    background: #FFFFFF;
+}
+.fa-bars{
+    color: #fff;
+    margin-left: 140px;
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.side-item{
+    padding-right: 15px;
+}
+
+.bar{
+    float: right;
+    padding-right: 28px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 74px;
+    padding-right: 14px;
+    color: #fff;
+}
+
+.items{
+    display: flex;
+    margin: 3px 0 3px 0;
+    padding-top: 12px;
+}
+.items svg{
+    padding-top: 4px;
+    padding-left: 32px;
+    font-size: 17px;
+}
+
+.items p{
+    padding-left: 17px;
+}
+
+.items:hover{
+    background: #fff;
+    color: #54256E;
+    border-bottom-right-radius: 46px;
+    border-top-right-radius: 46px;
+    transition: .1s;
+}
+
+/* main-heading */
+
+.main-heading {
+    display: flex;
+    margin-top: 10px;
+    padding-top: 30px;
+    color: #B4B7BC;
+    padding-left: 41px;
+}
+
+.main-heading h6{
+    padding-left: 15px;
+}
+
+.main-heading .fa-tv{
+    padding-top: 3px;
+}
+
+.content-heading h6{
+    padding: 24px;
+    color: #56226a;
+}
+
+
+/* Content-Body */
+
+
+.content-body .navbar .navbar-brand{
+    color: #54256a;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    z-index: 1;
+    margin-top: 2px;
+    color: #ccc;
+    margin-left: 24px;
+    font-size: 14px;  
+}
+.form-inline span{
+    color: #ccc;
+    position: absolute;
+    margin-left: 47px;
+}
+
+.form-inline input{
+    background: #F0F4FA;
+    order: none;
+    border: none;
+    width: 227px;
+    border-radius: 20px;
+}
+
+tbody th{
+    font-weight: 400;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-box .btn{
+    width: 139px;
+    background: #fff;
+    color: orange;
+    font-weight: 500;
+    /* padding: 8px; */
+    border: 1px solid orange;
+    border-radius: 27px;
+}
