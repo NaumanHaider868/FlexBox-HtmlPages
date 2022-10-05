@@ -24,7 +24,7 @@ nav h1{
     display: flex;
 }
 .sidebar{
-    height: 100%;
+    height: 100vh;
     width:20%;
     background:#56226A;
     flex-direction: column;
@@ -37,17 +37,20 @@ nav h1{
 }
 .main-content{
     width:80%;
-    height: 770px;
+    height: 100vh;
     background:#F0F4FA;
 }
 .content-body{
-    width: 1000px;
+    width: 95%;
     padding: 12px;
     height: 612px;
     border-radius: 13px;
-    margin: 20px auto;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
     background: #FFFFFF;
 }
+
 .fa-bars{
     color: #fff;
     margin-left: 140px;
@@ -86,6 +89,10 @@ nav h1{
 .items p{
     padding-left: 17px;
 }
+.items .fa-chevron-down{
+    position: absolute;
+    right: 12px;
+}
 
 .items:hover{
     background: #fff;
@@ -99,10 +106,10 @@ nav h1{
 
 .main-heading {
     display: flex;
-    margin-top: 10px;
-    padding-top: 30px;
+    /* margin-top: 10px; */
+    padding-top: 37px;
     color: #B4B7BC;
-    padding-left: 41px;
+    padding-left: 50px;
 }
 
 .main-heading h6{
@@ -128,19 +135,19 @@ nav h1{
     font-weight: 500;
 }
 
-.fa-magnifying-glass{
+/* .fa-magnifying-glass{
     position: absolute;
     z-index: 1;
     margin-top: 2px;
     color: #ccc;
     margin-left: 24px;
     font-size: 14px;  
-}
-.form-inline span{
+} */
+/* .form-inline span{
     color: #ccc;
     position: absolute;
     margin-left: 47px;
-}
+} */
 
 .form-inline input{
     background: #F0F4FA;
@@ -165,7 +172,34 @@ tbody th{
     background: #fff;
     color: orange;
     font-weight: 500;
-    /* padding: 8px; */
+    text-align: center;
+    padding: 8px;
     border: 1px solid orange;
     border-radius: 27px;
+}
+.form-inline input{
+    padding-left: 20px;
+    position: relative;
+}
+
+.form-inline input::placeholder{
+    color: #ccc;
+    padding-left: 22px;
+
+}
+.form-inline .fa-magnifying-glass{
+    position: absolute;
+    /* left: 20px; */
+    font-size: 13px;
+    z-index: 1;
+    padding-top: 2px;
+    padding-left: 22px;
+    color: #ccc;
+}
+.form-inline .form-control:focus {
+
+    z-index: 2;
+}
+.items{
+    position: relative;   
 }
