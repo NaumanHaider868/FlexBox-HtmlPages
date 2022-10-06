@@ -1,0 +1,200 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/Content.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Vibika</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-white">
+        <a class="navbar-brand">
+            <h1>vi<span class="bi"><i class="fa fa-play"></i></span>b</span><span>ika</h1>
+        </a>
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link en" style="padding-top: 11px;">EN</a>
+            </li>
+            <li class="nav-item">
+                <div class="icon-border"
+                    style="border-left: 1px solid #ccc; border-right: 1px solid #ccc; display: flex;">
+                    <a class="nav-link">
+                        <i class="fa-regular fa-bell"></i>
+                    </a>
+                    <a class="nav-link">
+                        <i class="fa-regular fa-comments"></i>
+                    </a>
+
+                </div>
+            <li class="nav-item" style="padding-left: 10px;">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/profile.jpeg" width="30" height="30" style="border-radius: 50%;">
+                </a>
+            </li>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <!-- SideBar And Content -->
+    <div class="main-side">
+        <div class="sidebar">
+
+            <div class="bar">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+
+            <div class="item">
+                <div class="items">
+                    <i class="fa-solid fa-gauge side-item"></i>
+                    <p>Dashboard</p>
+                </div>
+
+                <div class="items">
+                    <i class="fa fa-server side-item"></i>
+                    <p>Servers <i class="fa fa-chevron-down pull-right" style="font-size: 14px;"></i></p>
+                </div>
+
+                <div class="items">
+                    <i class="fa fa-television side-item"></i>
+                    <p>Channels <i class="fa fa-chevron-down" style="font-size: 14px;"></i></p>
+                </div>
+
+                <div class="items">
+                    <i class="fa fa-user side-item"></i>
+                    <p>Customers <i class="fa fa-chevron-down" style="font-size: 14px;"></i></p>
+                </div>
+
+                <div class="items">
+                    <i class="fa fa-video-camera side-item"></i>
+                    <p>VOD <i class="fa fa-chevron-down" style="font-size: 14px;"></i></p>
+                </div>
+
+                <div class="items">
+                    <i class="fa fa-cart-plus side-item"></i>
+                    <p>Resellers <i class="fa fa-chevron-down" style="font-size: 14px;"></i></p>
+                </div>
+
+                <div class="items">
+                    <i class="fa fa-headphones side-item"></i>
+                    <p>Radio <i class="fa fa-chevron-down" style="font-size: 14px;"></i></p>
+                </div>
+
+                <div class="items">
+                    <i class="fa fa-wrench side-item"></i>
+                    <p>Tools <i class="fa fa-chevron-down" style="padding-left: 210px; font-size: 14px;"></i></p>
+                </div>
+
+                <div class="items">
+                    <i class="fa fa-pie-chart side-item"></i>
+                    <p>Statistics</p>
+                </div>
+
+                <div class="items">
+                    <i class="fa fa-question side-item"></i>
+                    <p>Help</p>
+                </div>
+
+                <div class="items">
+                    <i class="fa fa-cog side-item"></i>
+                    <p>Settings</p>
+                </div>
+
+                <div class="items">
+                    <i class="fa fa-file-o side-item"></i>
+                    <p>Changelog</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="main-heading">
+                <i class="fa fa-television"></i>
+                <h6>Manage Channel</h6>
+            </div>
+
+            <div class="content-body">
+                <nav class="navbar" style="padding: 11px;">
+                    <div class="nav-btn">
+                        <a class="navbar-brand">ADD NEW CHANNEL</a>
+                        <span class="basic navbar-brand"
+                            style="color: orange; margin-right: 51px; cursor: pointer;">Basic</span>
+                        <span class="para navbar-brand"
+                            style="color: #ccc; font-size: 13px; padding-top: 8px; font-weight: 400;">Advanced/Optional</span>
+                    </div>
+                    <span class="Channel navbar-brand" style="color: #54256abf;">Channel List</span>
+                </nav>
+
+                <form style="margin-top: 20px;">
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label>NAME</label>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>DESCRIPTION</label>
+                            <input type="text" class="form-control" placeholder="Enter channel description..">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>SUBSCRITION</label>
+                            <input type="text" class="form-control" placeholder="Choose subscription..">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>MAIN SOURCE STREAME</label>
+                            <input type="text" class="form-control" placeholder="Enter main source..">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label>TYPE</label>
+                            <input type="text" class="form-control" placeholder="Choose channel type..">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>RECEIVING SERVER</label>
+                            <input type="text" class="form-control" placeholder="Choose receiving server..">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>STREAMING SERVER</label>
+                            <input type="text" class="form-control" placeholder="Choose streaming server..">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>SOURCE GATHERING</label>
+                            <input type="text" class="form-control" placeholder="Choose source gathering">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="check">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+
+                <div class="form-btn">
+                    <button class="btn">Save</button>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+    <script src="./css/all.js"></script>
+</body>
+
+</html>
