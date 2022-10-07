@@ -145,11 +145,18 @@ nav h1{
     right: 12px;
     opacity: 1;
 }
-.items:hover{
+.items:hover {
     background: #fff;
     color: #54256E;
-    border-bottom-right-radius: 46px;
+    border-radius: 0;
+    transition: .1s;
+}
+
+.sidebar.active .items:hover {
+    background: #fff;
+    color: #54256E;
     border-top-right-radius: 46px;
+    border-bottom-right-radius: 46px;
     transition: .1s;
 }
 
@@ -244,3 +251,29 @@ tbody th{
 .items{
     position: relative;   
 }
+
+@media(max-width: 1250) {
+    .sidebar{
+        width: 5%;
+    }
+    .main-content{
+        width: 95%;
+    }
+    .items{
+        padding: 3px;
+    }
+    .item{
+        margin-right: 0;
+    }
+    .my-item .fa-chevron-down{
+        opacity: 0;
+    }
+    .my-item p{
+        opacity: 0;
+    }
+    .items:hover{
+        border-radius: 0;
+        transition: .1s;
+    }
+    
+  }

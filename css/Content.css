@@ -143,8 +143,8 @@ nav h1 {
 .sidebar.active .items:hover {
     background: #fff;
     color: #54256E;
-    border-top-right-radius: 45px;
-    border-bottom-right-radius: 45px;
+    border-top-right-radius: 46px;
+    border-bottom-right-radius: 46px;
     transition: .1s;
 }
 
