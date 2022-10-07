@@ -74,8 +74,8 @@ form .btn-login{
     background: #FF8500;
     width: 100%;
     text-align: center;
-    padding: 0;
-    height: 35px;
+    padding: 10px;
+    /* height: 35px; */
     border-radius: 23px;
     border: none;
     outline: none;
@@ -87,10 +87,9 @@ form .btn-login{
 
 form .btn-register{
     margin-top: 10px;
-    height: 35px;
     background: none;
     color: #929292;
-    padding: 0;
+    padding: 10px;
     border: 1px solid #958a8a;
     width: 100%;
     border-radius: 23px;
@@ -163,13 +162,22 @@ form .btn-register{
   .icons{
     display: flex;
     margin: 22px;
-    color: #ccc;
   }
-
-  .fa-square-facebook{
+  .icons a{
+    color: #ccc;
+    text-decoration: none;
+  }
+  .icons .fa-square-facebook{
     padding-right: 20px;
     font-size: 15px;
   }
-  .fa-twitter{
+  .icons .fa-twitter{
     font-size: 15px;
+  }
+
+  .form-group input:focus{
+    box-shadow: none;
+  }
+  .btn:focus{
+    box-shadow: none;
   }
