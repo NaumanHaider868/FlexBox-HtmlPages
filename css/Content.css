@@ -9,6 +9,7 @@ body {
 
 nav h1 {
     color: #54256E;
+    cursor: pointer;
     font-size: 45px;
     font-weight: 500;
 }
@@ -33,6 +34,7 @@ nav h1 {
 }
 
 /* Sidebar Start */
+
 .sidebar.active {
     /* height: 100vh; */
     transition: 0.5s;
@@ -70,14 +72,15 @@ nav h1 {
 
 .bar {
     position: absolute;
-    right: 47px;
+    right: 29px;
+    /* right: 47px; */
     top: 47px;
     color: #fff;
 }
 
-.sidebar.active .bar{
+.bar.active{
     position: absolute;
-    right: 21px;
+    right: 24px;
     top: 47px;
     color: #fff;
 }
@@ -138,6 +141,7 @@ nav h1 {
     color: #54256E;
     border-radius: 0;
     transition: .1s;
+    cursor: pointer;
 }
 
 .sidebar.active .items:hover {
@@ -146,6 +150,7 @@ nav h1 {
     border-top-right-radius: 46px;
     border-bottom-right-radius: 46px;
     transition: .1s;
+    cursor: pointer;
 }
 
 .my-item {
@@ -204,7 +209,7 @@ nav h1 {
 }
 
 
-.content-body .navbar .navbar-brand {
+/* .content-body .navbar .navbar-brand {
     color: #54256a;
     font-size: 1rem;
     font-weight: 500;
@@ -243,7 +248,60 @@ nav h1 {
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 50px;
+    cursor: pointer;
 
+} */
+
+.form-top{
+    display: flex;
+    padding-bottom: 11px;
+}
+.form-top .form-heading{
+    margin-top: 11px;
+}
+.form-top .form-heading h3{
+    color: #56226a;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn1{
+    margin-left: 10%;
+}
+.form-para{
+    margin-left: 5%;
+    padding-top: 12px;
+}
+.form-para span{
+    font-size: 12px;
+    color: #ccc;
+    font-weight: 500;
+}
+.btn1 .btn-basic{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 500;
+    /* border: 1px solid; */
+    background: #fff;
+    color: orange;
+    border-radius: 22px;
+    box-shadow: 2px 5px 17px -7px orange;
+}
+.btn1 .btn-basic:focus{
+    box-shadow: 2px 5px 12px -4px orange;
+}
+
+.btn2{
+    margin-left: auto;
+}
+.btn2 .btn-list{
+    background: #fff;
+    color: #56226a;
+    border: 1px solid #56226a;
+    border-radius: 30px;
+}
+.btn2 .btn-list:focus{
+    box-shadow: none;
 }
 
 .form-group label {
@@ -346,7 +404,7 @@ input:checked+.slider:before {
     margin: 17px 0 17px 0;
 }
 
-.form-btn .btn {
+.form-btn .button {
     background: #FF8300;
     color: #fff;
     padding: 10px 68px 10px 68px;
@@ -354,7 +412,7 @@ input:checked+.slider:before {
     box-shadow: 0px 0px 13px 2px orange;
 }
 
-.form-btn .btn:focus {
+.form-btn .button:focus {
     box-shadow: 0px 0px 13px 2px orange;
 }
 
@@ -402,9 +460,9 @@ input:checked+.slider:before {
     .item{
         margin-right: 0;
     }
-    .my-item .fa-chevron-down{
+    /* .my-item .fa-chevron-down{
         opacity: 0;
-    }
+    }s */
     .my-item p{
         opacity: 0;
     }
@@ -414,3 +472,27 @@ input:checked+.slider:before {
     }
     
   }
+  @media(max-width: 1180px){
+    .sidebar.active .item .items .my-item .fa-chevron-down{
+        opacity: 0;
+    }
+  }
+
+  @media(max-width: 1390px){
+    .items svg{
+        padding-left: 22px;
+    }
+    /* .bar{
+        right: 28px;
+    } */
+  }
+  @media (max-width: 1290px){
+    .items svg{
+        padding-left: 17px;
+    }
+}
+@media (max-width: 1000px){
+    .items svg{
+        padding-left: 14px;
+    }
+}

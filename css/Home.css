@@ -78,7 +78,7 @@ nav h1{
 
 .bar {
     position: absolute;
-    right: 47px;
+    right: 29px;
     top: 47px;
     color: #fff;
 }
@@ -187,67 +187,70 @@ nav h1{
 /* Content-Body */
 
 
-.content-body .navbar .navbar-brand{
-    color: #54256a;
+
+
+
+.form-top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 11px;
+    
+}
+
+.form-top .form-heading{
+    margin-top: 11px;
+    padding-left: 10px;
+}
+
+.form-top .form-heading h3{
+    color: #56226a;
     font-size: 1rem;
     font-weight: 500;
 }
 
+.form-top .form-text-field{
+    padding-right: 10px;
+}
 
-.form-inline input{
-    background: #F0F4FA;
-    order: none;
+.form-text-field input{
+    position: relative;
+    background: #f0f4fa;
+    padding: 5px;
     border: none;
-    width: 227px;
-    border-radius: 20px;
-}
-.form-inline input:focus{
-    box-shadow: none;
+    border-radius: 22px;
 }
 
+.form-text-field input::placeholder{
+    color: #ccc;
+    padding-left: 35px;
+}
+
+.form-text-field input:focus{
+    outline: none;
+    z-index: 11;
+}
+
+.form-text-field input:active{
+    /* outline: none; */
+    z-index: 11;
+}
+
+.form-text-field .fa-magnifying-glass{
+    position: absolute;
+    font-size: 13px;
+    z-index: 1;
+    padding-top: 11px;
+    padding-left: 22px;
+    color: #ccc;
+}
+
+.form-text-field input:target:active, .fa-magnifying-glass{
+    z-index: -1;
+}
 tbody th{
     font-weight: 400;
 }
 
-.btn-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn-box .btn{
-    width: 139px;
-    background: #fff;
-    color: orange;
-    font-weight: 500;
-    text-align: center;
-    padding: 8px;
-    border: 1px solid orange;
-    border-radius: 27px;
-}
-.form-inline input{
-    padding-left: 20px;
-    position: relative;
-}
-
-.form-inline input::placeholder{
-    color: #ccc;
-    padding-left: 22px;
-
-}
-.form-inline .fa-magnifying-glass{
-    position: absolute;
-    /* left: 20px; */
-    font-size: 13px;
-    z-index: 1;
-    padding-top: 2px;
-    padding-left: 22px;
-    color: #ccc;
-}
-.form-inline .form-control:focus {
-
-    z-index: 2;
-}
 .items{
     position: relative;   
 }
@@ -277,3 +280,53 @@ tbody th{
     }
     
   }
+
+  @media(max-width: 1250) {
+    .sidebar{
+        width: 5%;
+    }
+    .main-content{
+        width: 95%;
+    }
+    .items{
+        padding: 3px;
+    }
+    .item{
+        margin-right: 0;
+    }
+    /* .my-item .fa-chevron-down{
+        opacity: 0;
+    }s */
+    .my-item p{
+        opacity: 0;
+    }
+    .items:hover{
+        border-radius: 0;
+        transition: .1s;
+    }
+    
+  }
+  @media(max-width: 1180px){
+    .sidebar.active .item .items .my-item .fa-chevron-down{
+        opacity: 0;
+    }
+  }
+
+  @media(max-width: 1390px){
+    .items svg{
+        padding-left: 22px;
+    }
+    /* .bar{
+        right: 28px;
+    } */
+  }
+  @media (max-width: 1290px){
+    .items svg{
+        padding-left: 17px;
+    }
+}
+@media (max-width: 1000px){
+    .items svg{
+        padding-left: 14px;
+    }
+}

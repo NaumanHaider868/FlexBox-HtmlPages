@@ -70,7 +70,7 @@ nav h1 {
 
 .bar {
     position: absolute;
-    right: 47px;
+    right: 20px;
     top: 47px;
     color: #fff;
 }
@@ -203,7 +203,7 @@ nav h1 {
 }
 
 
-.content-body .navbar .navbar-brand {
+/* .content-body .navbar .navbar-brand {
     color: #54256a;
     font-size: 1rem;
     font-weight: 500;
@@ -243,8 +243,63 @@ nav h1 {
     padding-left: 15px;
     border-radius: 50px;
 
+} */
+
+/* Form Top */
+
+.form-top{
+    display: flex;
+    padding-bottom: 11px;
+}
+.form-top .form-heading{
+    margin-top: 11px;
+}
+.form-top .form-heading h3{
+    color: #56226a;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
+.btn1{
+    margin-left: 10%;
+}
+.form-para{
+    margin-left: 5%;
+    padding-top: 12px;
+}
+.form-para span{
+    font-size: 12px;
+    color: #ccc;
+    font-weight: 500;
+}
+.btn1 .btn-basic{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 500;
+    /* border: 1px solid; */
+    background: #fff;
+    color: orange;
+    border-radius: 22px;
+    box-shadow: 2px 5px 17px -7px orange;
+}
+.btn1 .btn-basic:focus{
+    box-shadow: 2px 5px 12px -4px orange;
+}
+
+.btn2{
+    margin-left: auto;
+}
+.btn2 .btn-list{
+    background: #fff;
+    color: #56226a;
+    border: 1px solid #56226a;
+    border-radius: 30px;
+}
+.btn2 .btn-list:focus{
+    box-shadow: none;
+}
+
+/* Form-top End */
 .form-group label {
     font-size: 12px;
     font-weight: 500;
