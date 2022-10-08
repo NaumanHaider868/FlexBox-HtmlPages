@@ -25,6 +25,7 @@ nav h1 {
 .en {
     font-size: 12px;
     font-weight: bold;
+    padding-top: 11px;
 }
 
 /* End Navbar */
@@ -128,6 +129,7 @@ nav h1 {
     position: absolute;
     right: 12px;
     opacity: 0;
+    font-size: 14px; padding-top: 4px;
 }
 
 .sidebar.active .items .fa-chevron-down {
@@ -202,13 +204,21 @@ nav h1 {
 }
 
 
-
+.icon-border{
+    border-left: 1px solid #ccc; border-right: 1px solid #ccc; display: flex;
+}
 .content-heading h6 {
     padding: 24px;
     color: #56226a;
 }
 
+.navbar-brand img{
+    border-radius: 50%;
+}
 
+.nav-link{
+    cursor: pointer;
+}
 /* .content-body .navbar .navbar-brand {
     color: #54256a;
     font-size: 1rem;
