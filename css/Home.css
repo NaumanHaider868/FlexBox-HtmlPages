@@ -5,6 +5,7 @@
 
 nav h1{
     color: #54256E;
+    padding-left: 6px;
     font-size: 45px;
     font-weight: 500;
 }
@@ -18,14 +19,22 @@ nav h1{
 .en{
     font-size: 12px;
     font-weight: bold;
-    
+    cursor: pointer;
 }
 
 .icon-border{
-    border-left: 1px solid #ccc; border-right: 1px solid #ccc; display: flex;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    display: flex;
+    padding-top: 5px;
+}
+.icon-border svg{
+    cursor: pointer;
+    padding-right: 1px;
 }
 .navbar-brand img{
     border-radius: 50%;
+    cursor: pointer;
 }
 /* Sidebar */
 
@@ -64,6 +73,7 @@ nav h1{
     position: absolute;
     top: 38px;
     right: 25px;
+    cursor: pointer;
 }
 
 .items {
@@ -96,6 +106,7 @@ nav h1{
 
 .sidebar.active .items ul li:hover {
     background: #fff;
+    cursor: pointer;
     border-top-right-radius: 45px;
     border-bottom-right-radius: 45px;
 }
@@ -116,7 +127,7 @@ nav h1{
 .items ul li a .icon2 {
     float: right;
     padding-right: 10px;
-    padding-top: 7px;
+    padding-top: 2px;
     font-size: 12px;
 }
 
@@ -194,6 +205,7 @@ nav h1{
 
     .sidebar.active .items ul li:hover {
         background: #fff;
+        cursor: pointer;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
@@ -235,7 +247,7 @@ nav h1{
     /* margin-top: 10px; */
     padding-top: 37px;
     color: #B4B7BC;
-    padding-left: 50px;
+    padding-left: 33px;
 }
 
 .main-heading h6{
@@ -279,7 +291,7 @@ nav h1{
 
 .form-text-field input{
     position: relative;
-    background: #f0f4fa;
+    background: #F0F4FA;
     padding: 5px;
     border: none;
     border-radius: 22px;
@@ -287,7 +299,7 @@ nav h1{
 
 .form-text-field input::placeholder{
     color: #ccc;
-    padding-left: 35px;
+    padding-left: 40px;
 }
 
 .form-text-field input:focus{
@@ -302,10 +314,10 @@ nav h1{
 
 .form-text-field .fa-magnifying-glass{
     position: absolute;
-    font-size: 13px;
+    font-size: 14px;
     z-index: 1;
     padding-top: 11px;
-    padding-left: 22px;
+    padding-left: 28px;
     color: #ccc;
 }
 
@@ -315,6 +327,17 @@ nav h1{
 tbody th{
     font-weight: 400;
 }
+
+thead tr th{
+    font-weight: 500;
+}
+
+/* .table td, .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: none !important;
+} */
+
 
 .items{
     position: relative;   
@@ -327,18 +350,24 @@ tbody th{
 }
 
 .form-btn .button {
-    background: #FF8300;
-    color: #fff;
+    background: #fff;
+    color: #FF8300;
     padding: 10px 68px 10px 68px;
     border-radius: 30px;
-    box-shadow: 0px 0px 13px 2px orange;
+    font-weight: 500;
+    border: 1px solid #FF8300;
 }
 
 .form-btn .button:focus {
-    box-shadow: 0px 0px 13px 2px orange;
+    box-shadow: none;
 }
 
-
+.content-body hr{
+    margin-top: -4px;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
 
 /* Sidebar Responsive */
 
