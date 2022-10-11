@@ -441,7 +441,17 @@ input:checked+.slider:before {
         margin-top: 46px;
     }
 }
+@media (max-width: 707px) {
+    .btn1{
+        padding-left: 5%;
+    }
+}
 
+@media (max-width: 615px) {
+    .btn1{
+        padding-left: 5%;
+    }
+}
 @media (max-width: 560px) {
     .form-para{
         margin-right: auto;
@@ -449,7 +459,7 @@ input:checked+.slider:before {
         margin-left: 0px;
     }
     .btn1 {
-        margin-left: 110px;
+        margin-left: 96px;
     }
     .btn2{
         margin-left: 126px;
@@ -457,3 +467,9 @@ input:checked+.slider:before {
     }
 }
 
+
+@media (max-width: 520px) {
+    .btn1 {
+        margin-left: 70px;
+    }
+}
